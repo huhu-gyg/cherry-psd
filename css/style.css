@@ -1,173 +1,100 @@
-body {
-  font: 15px/1.5 Arial, Helvetica, sans-serif;;
-	padding: 0;
-	margin: 0;
-  background-color: #cccccc;
-}
 
-  /*HEADER*/
 
-header {
-  position: relative;
+/*HEADER*/
+
+#header1 {
   background: url("../img/header_bg.jpg") repeat;
   height: 72px;
 }
 
-.cherry {
-  position: absolute;
-  top: 0 px;
-  left: 300px;
-  line-height: 0.3; 
+#header2 {
+  background: url("../img/main_bg.jpg");
+  height: 240px;
 }
 
-.search {
-  position: absolute;
-  left: 1000px;
-  right: 100px;
-  top: 17px;
-}
-
-.main_bg {
-  position: absolute;
-  /*top: 72px;*/
-
-  /*left: 0px;
-  right: 0px;
-  top: 72px;*/
-}
-
-.eatenBerry {
-  position: absolute;
-  /*top: -150px;*/
-  line-height: 0.3; 
-  left: 15px;
-}
-
-   /*MAIN*/
-
-/*Navigation Top*/
-
-nav{
-   float: right;
-   position: absolute;
-   top: 240px;
-   user-select:none;
-   background-color: #990033;
-   width: 100%;
+nav {
+  float: right;
+  user-select:none;
+  background-color: #990033;
 }
 
 nav a{
-   color: #ffffff;
-   text-decoration: none;
-   font-size: 1em;
-   font-weight: bold;
-
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 nav ul{
-   cursor:pointer;
-   float: right;
+  cursor:pointer;
+  float: right;
 }
 
 nav li{
-   display: inline;
-   padding: 0 20px 0 20px;
+  display: inline;
+  padding: 0 20px 0 20px;
 }
 
-.mainContent {
-  position: relative;
-  background-color: #ffffff;
-  width: 75%;
-  margin: auto;
-  /*overflow: hidden;*/
+#navbar_s {
+  background-color: #cccccc;
+  cursor:pointer;
 }
 
-#section1 ul {
-    background-color: #cccccc;
-    position: absolute;
-    top: 260px;
-    width: 100%;
-    cursor:pointer;
+#navbar_s ul {
+  cursor:pointer;
+  float: left;
 }
 
-#section1 li {
-     cursor:pointer;
-     display: inline;
+#navbar_s li {
+  cursor: pointer;
+  display: inline;
 }
 
-#section1 a{
-   color: #ffffff;
-   text-decoration: underline;
-   font-size: 1em;
-   font-weight: bold;
-
+#navbar_s a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 1em;
+  font-weight: bold;
 }
 
-#content {
-  margin: 0 30px 0 30px;
-  background-color: #ffffff;
-}
-
-aside {
-  position: absolute;
-  top: 300px;
-  background-color: #ffffff;
-
-}
+/*MAIN*/
 
 form {
   background-color: #cccccc;
-  width: 200px;
   padding: 15px;
   line-height: 0.8
 }
 
-.whatWeDo {
-  position: absolute;
-  left: 250px;
-  top: 300px;
+aside {
   background-color: #ffffff;
 }
 
 .box {
-    float: left;
-    text-align: center;
-    width: 30%;
-    padding: 10px;
-    }
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  }
 
 .article2 {
-  position: absolute;
-  left: 250px;
-  top: 650px;
+  float: left;
 }
 
 .lists {
   float: left;
   text-align: left;
   width: 30%;
-  /*padding: 10px;  */
+  padding: 10px;
 }
 
 .table {
-  position: absolute;
-  left: 250px;
-  top: 1150px;
+  float: left;
 }
 
 /*FOOTER*/
 
-.footer {
+#footer {
   background: url("../img/footer_bg.jpg") repeat;
-  position: relative;
-  top: 1400px;
-  width: 100%;
-  height: 281px;
-}
-
-.footerContent {
-  position: absolute;
-  left: 250px;
 }
 
 .footerBox {
@@ -176,22 +103,13 @@ form {
   width: 30%;
   line-height: 1;
   color: #ffffff;
-  /*margin: 0 15px 0 15px;*/
-}
 
-.Shape_1 {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(135, 95, 102);
-  border-radius: 5px;
-  background-color: rgb(36, 39, 45);
-  box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-  position: absolute;
-  left: 888px;
-  top: 19px;
-  width: 196px;
-  height: 32px;
-  z-index: 310;
-}
+
+/*body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;;
+	padding: 0;
+	margin: 0;
+  background-color: #cccccc;
+  */
 
 
