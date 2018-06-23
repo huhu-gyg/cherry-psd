@@ -1,10 +1,20 @@
-
-
 /*HEADER*/
 
-#header1 {
-  background: url("../img/header_bg.jpg") repeat;
+.first_letter {
+  color: #990033;
+}
+
+.header {
+  background: url("../img/header_bg.jpg");
   height: 72px;
+}
+
+.search {
+  float: right;
+}
+
+.search_button {
+  float: right;
 }
 
 #header2 {
@@ -12,25 +22,25 @@
   height: 240px;
 }
 
-nav {
+#navbar {
   float: right;
   user-select:none;
   background-color: #990033;
 }
 
-nav a{
+#navbar a{
   color: #ffffff;
   text-decoration: none;
   font-size: 1em;
   font-weight: bold;
 }
 
-nav ul{
+#navbar ul{
   cursor:pointer;
   float: right;
 }
 
-nav li{
+#navbar li{
   display: inline;
   padding: 0 20px 0 20px;
 }
@@ -57,7 +67,19 @@ nav li{
   font-weight: bold;
 }
 
+
 /*MAIN*/
+
+.contact_us_button {
+  background-color: #990033;
+  color: #ffffff;
+}
+
+#collapse_contact_us {
+  display: none;
+  background-color: #990033;
+  color: #ffffff;
+}
 
 form {
   background-color: #cccccc;
@@ -65,27 +87,6 @@ form {
   line-height: 0.8
 }
 
-aside {
-  background-color: #ffffff;
-}
-
-.box {
-  float: left;
-  text-align: center;
-  width: 30%;
-  padding: 10px;
-  }
-
-.article2 {
-  float: left;
-}
-
-.lists {
-  float: left;
-  text-align: left;
-  width: 30%;
-  padding: 10px;
-}
 
 .table {
   float: left;
@@ -93,23 +94,63 @@ aside {
 
 /*FOOTER*/
 
-#footer {
-  background: url("../img/footer_bg.jpg") repeat;
+.footer {
+  background: url("../img/footer_bg.jpg");
+  color: #ffffff;
 }
 
-.footerBox {
+/* .footerBox {
   float: left;
   text-align: left;
   width: 30%;
   line-height: 1;
   color: #ffffff;
-
+} */
 
 /*body {
   font: 15px/1.5 Arial, Helvetica, sans-serif;;
 	padding: 0;
 	margin: 0;
   background-color: #cccccc;
+}
   */
 
 
+  /* Media Queries */
+
+@media(max-width: 768px) {
+  #collapse_contact_us {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+  /* #collapse_aside {
+    display: inline;
+  } 
+
+  #contact_us_button {
+    display: inline;
+  }
+
+  aside {
+    display: initial;
+  }
+
+}
+
+@media(min-width: 768px) {
+
+  #collapse_aside {
+    display: contents;
+  } 
+
+  #contact_us_button {
+    display: none;
+  }
+
+    aside {
+    visibility: visible;
+  }
+
+} */

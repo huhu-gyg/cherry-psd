@@ -18,35 +18,40 @@
           rel="stylesheet"
           type="text/css"
           href="./css/bootstrap.css">
-      <script src="./js/bootstrap.js"></script>     
+      <script src="./js/bootstrap.js"></script> 
+      <script src="./js/main.js"></script>   
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-      <div class="container-fluid">
-          <div class="row" id="header1">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <h1>CHERRY</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                <input class="search" type="text" placeholder="Search..">
-            </div>
-            <div class="col-md-2"></div>
+      <header class="header">
+        <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+              <h1><span class="first_letter">C</span>HERRY</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
           </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="form-inline">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn" type="submit">Search</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        </header>
+      <div class="container" id="mainContent">
           <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8" id="header2">
-                <h1>Eaten berry</h1>
+            <div class="col-sm-12 col-md-12" id="header2">
+                <h1><span class="first_letter">E</span>aten berry</h1>
                 <h3>and go for a walk</h3><br>
                 <h3>Today good weather...</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d</p>
             </div>
-            <div class="col-md-2"></div>
           </div>
           <div class="row">
-            <div class="col-md-2"></div>
-              <nav class="col-md-8" id="navbar">
+              <nav class="col-sm-12 col-md-12" id="navbar">
                 <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">Sliders</a></li>
@@ -59,70 +64,61 @@
               </nav>
           </div>
           <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8" id="navbar_s">
+            <div class="col-sm-12 col-md-12" id="navbar_s">
               <ul>
                 <li><a href="#">Home /</a></li>
                 <li><a href="#">Another page /</a></li>
                 <li><a href="#">This page</a></li>
               </ul>
             </div>
-            <div class="col-md-2"></div>
           </div>
           <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-2">
-                <aside>
-                    <div class="form">
+              <nav class="navbar navbar-expand-lg align-items-start col-sm-12 col-md-3" id="contact_us">
+                  <button class="btn" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
+                          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="collapse_contact_us">
+                      Contact Us
+                    </button>
+                    <div class="collapse flex-column navbar-collapse" id="navbarNavAltMarkup">
                     <form class="contact">
-                        <div>
                             <h2>Contact Us</h2>
-                            <input type="text" placeholder="Your Name" required>
-                          </div><br>
-                        <div>
-                            <input type="text" placeholder="Daytime Number" required>
-                          </div><br>
-                        <div>
-                            <input type="email" placeholder="Email Address" required>
-                          </div><br>
-                        <div>
-                            <input type="text" placeholder="City" required>
-                          </div><br>
-                        <div>
-                            <input type="text" placeholder="Problem with" required>
-                          </div><br>
-                        <div>
-                            <input type="text" placeholder="Brand" required>
-                          </div><br>
-                        <button class="button_1" type="submit">Lorem ipsum dolor</button>
+                            <input type="text" class="form-control" placeholder="Your Name" required><br>
+                            <input type="text" class="form-control" placeholder="Daytime Number" required><br>
+                            <input type="email" class="form-control" placeholder="Email Address" required><br>
+                            <input type="text" class="form-control" placeholder="City" required><br>
+                            <select type="text" class="form-control" placeholder="Problem with" required>
+                                <option class="disabled">Problem with</option>
+                            </select><br>
+                            <select type="text" class="form-control" placeholder="Brand" required>
+                                <option class="disabled">Brand</option>
+                            </select> <br>
+                        <button class="contact_us_button" type="submit">Lorem ipsum dolor</button>
                     </form> 
-                    </div>
                   <article class="column1">
                     <h2>Headline...</h2>
                     <p>Lorem ipsum...</p>
                   </article>
-                </aside> 
-            </div>
-            <div class="col-md-6">
-                <article class="whatWeDo">
-                    <div class="container1">
-                    <div>
-                      <h2>What We Do...</h2>
+                  </div>
+                </nav>
+            <div class="col-sm-12 col-md-9">
+                <article class="row whatWeDo">
+                    <div class="col-md-12">
+                      <h2><span class="first_letter">W</span>hat We Do...</h2>
                       <p>Lorem ipsum dolor</p>
                     </div>
-                    <div class="box">
+                    <div class="row">
+                    <div class="col-md-4">
                         <h2>Admin panel</h2>
                         <a href="#">
                         <img src="./img/admin_panel.jpg" alt="admin panel">
                         </a>
                     </div>
-                    <div class="box">
-                        <h2>Shrotcodes</h2>
+                    <div class="col-md-4">
+                        <h2>Shortcodes</h2>
                         <a href="#">
                         <img src="./img/short.jpg" alt="admin panel">
                         </a>
                     </div>
-                    <div class="box">
+                    <div class="col-md-4">
                           <h2>Videos</h2>
                           <a href="#">
                           <img src="./img/videos.jpg" alt="admin panel">
@@ -130,9 +126,11 @@
                     </div>
                     </div> 
                   </article>
-                  <article class="article2">
-                      <h2>Lists</h2>
-                      <div class="lists">
+                  <article class="row">
+                    <div class="col-md-12">
+                      <div class="row">
+                      <div class="col-sm-12 col-md-4">
+                      <h2><span class="first_letter">L</span>ists</h2>
                       <h4>List style type circle <code>ul</code></h4>
                     <ul>
                       <li>Lorem ipsum dolor sit amet</li>
@@ -149,7 +147,7 @@
                       <li>Aenean sit amet erat nunc</li>
                     </ul>
                     </div>
-                    <div class="lists">
+                    <div class="col-sm-12 col-md-4">
                       <h4>Unstyled</h4>
                       <p>Lorem ipsum dolor sit amet<br>
                         Consectetur adipiscing elit<br>
@@ -163,7 +161,7 @@
                       Faucibus porta lacus fringilla vel<br>
                         Aenean sit amet erat nunc</p>
                     </div>
-                    <div class="lists">
+                    <div class="col-sm-12 col-md-4">
                       <h4>Ordered ol</h4>
                       <ol>
                         <li>Lorem ipsum dolor sit amet</li>
@@ -174,9 +172,11 @@
                         <li>Aenean sit amet erat nunc</li>
                       </ol>
                     </div>
+                    </div>
+                    </div>
                     </article>
-                    <article class="table">
-                      <h2>Table</h2>
+                    <article class="table col-md-12">
+                      <h2><span class="first_letter">T</span>able</h2>
                         <table>
                           <tr>
                             <th>№</th>
@@ -237,22 +237,20 @@
                         </table>
                       </article>
                   </div>
-            <div class="col-md-2"></div>
+                </div>
           </div>
-          <div class="row" id="footer">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <footer class="footer">
-                    <div class="footerContent">
-                      <div class="footerBox">
-                        <h2>CHERRY Hours</h2>
+              <footer class="footer">
+                    <div class="container">
+                      <div class="row">
+                      <div class="footerBox col-md-4" >
+                        <h2><span class="first_letter">C</span>HERRY Hours</h2>
                         <p>We are open 24/7</p>
                         <p>Nights! Absolutely No Extra Charge</p>
                         <p>Weekends! Absolutely No Extra Charge</p>
                         <p>Holidays! Absolutely No Extra Charge</p>
                       </div>
-                      <div class="footerBox">
-                        <h2>Local CHERRY</h2>
+                      <div class="footerBox col-md-4">
+                        <h2>Local <span class="first_letter">C</span>HERRY</h2>
                         <ul>
                           <li>West Hollywood (323) 221-1107</li>
                           <li>Beverly Hills (310) 202-5428</li>
@@ -262,7 +260,7 @@
                         </ul>
                         <p>Call Us Toll Free 1-800-287-0919</p>
                       </div>
-                      <div class="footerBox">
+                      <div class="footerBox col-md-4">
                         <h2>Our Los Angeles Location</h2>
                         <p>Steve Smith</p>
                         <p>Hi-Tech Cherry Company</p>
@@ -272,11 +270,7 @@
                         <p>(800) 287-0919</p>
                       </div>
                     </div>
+                    </div>
                   </footer>
-            </div>
-            <div class="col-md-2"></div>
-          </div>
-
-        </div>    
   </body>
 </html>
