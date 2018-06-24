@@ -7,10 +7,6 @@
       <meta name="keywords" content="cherry website">
       <meta name="author" content="huhu.gyg">
       <title>Cherry | Home</title>
-      <link
-          rel="stylesheet"
-          type="text/css"
-          href="./css/style.css">
       <link 
           rel="stylesheet" 
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -18,6 +14,14 @@
           rel="stylesheet"
           type="text/css"
           href="./css/bootstrap.css">
+      <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+        >
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="./css/style.css">
       <script src="./js/bootstrap.js"></script> 
       <script src="./js/main.js"></script>   
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -26,28 +30,33 @@
   </head>
   <body>
       <header class="header">
-        <div class="container">
+        <div class="container padding-0">
         <div class="row">
           <div class="col-sm-6 col-md-6">
               <h1><span class="first_letter">C</span>HERRY</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <p id="header-cherry-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
           </div>
           <div class="col-sm-6 col-md-6">
-            <div class="form-inline">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn" type="submit">Search</button>
+            <div class="form-inline" style="float: right;">
+                <input class="form-control mr-sm-2 form_search_input" type="text" placeholder="Search">
+                <button class="btn form_search_button" type="submit"><i class="zmdi zmdi-search"></i></button>
             </div>
           </div>
         </div>
-        </div>
-        </header>
-      <div class="container" id="mainContent">
+      </div>
+    </header>
+      <div class="container main-content">
           <div class="row">
-            <div class="col-sm-12 col-md-12" id="header2">
+            <div class="col-sm-12 col-md-12" id="header-berry">
                 <h1><span class="first_letter">E</span>aten berry</h1>
-                <h3>and go for a walk</h3><br>
+                <h3 id="header-berry-text">and go for a walk</h3><br>
                 <h3>Today good weather...</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d</p>
+              <div class="row">
+                <p class="light-on-dark-text col-sm-12 col-md-6 col-lg-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                  consequat.</p>
+              </div>
             </div>
           </div>
           <div class="row">
@@ -68,19 +77,19 @@
               <ul>
                 <li><a href="#">Home /</a></li>
                 <li><a href="#">Another page /</a></li>
-                <li><a href="#">This page</a></li>
+                <li>This page</li>
               </ul>
             </div>
           </div>
           <div class="row">
-              <nav class="navbar navbar-expand-lg align-items-start col-sm-12 col-md-3" id="contact_us">
+              <nav class="navbar navbar-expand-lg align-items-start col-sm-12 col-md-12 col-lg-3" id="contact_us">
                   <button class="btn" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
                           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="collapse_contact_us">
                       Contact Us
                     </button>
                     <div class="collapse flex-column navbar-collapse" id="navbarNavAltMarkup">
                     <form class="contact">
-                            <h2>Contact Us</h2>
+                            <h2 class="dark-on-light">Contact Us</h2>
                             <input type="text" class="form-control" placeholder="Your Name" required><br>
                             <input type="text" class="form-control" placeholder="Daytime Number" required><br>
                             <input type="email" class="form-control" placeholder="Email Address" required><br>
@@ -91,35 +100,47 @@
                             <select type="text" class="form-control" placeholder="Brand" required>
                                 <option class="disabled">Brand</option>
                             </select> <br>
-                        <button class="contact_us_button" type="submit">Lorem ipsum dolor</button>
+                            <div>
+                              <button class="contact_us_button" type="submit">Lorem ipsum dolor</button>
+                            </div>
                     </form> 
-                  <article class="column1">
-                    <h2>Headline...</h2>
-                    <p>Lorem ipsum...</p>
+                  <article class="aside-article">
+                    <h2 class="dark-on-light">Headline...</h2>
+                    <p>Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit, sed do 
+                        eiusmod tempor incididunt ut labore et 
+                        dolore magna aliqua. Ut enim ad 
+                        minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo</p>
+                      <a href="#">More about</a>
                   </article>
                   </div>
                 </nav>
-            <div class="col-sm-12 col-md-9">
+            <div class="col-sm-12 col-md-12 col-lg-9">
                 <article class="row whatWeDo">
                     <div class="col-md-12">
                       <h2><span class="first_letter">W</span>hat We Do...</h2>
-                      <p>Lorem ipsum dolor</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat. Duis aute irure dolor in <a href="#">reprehenderit in voluptate velit esse</a> cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                     <div class="row">
                     <div class="col-md-4">
-                        <h2>Admin panel</h2>
+                        <h2 class="dark-on-light">Admin panel</h2>
                         <a href="#">
                         <img src="./img/admin_panel.jpg" alt="admin panel">
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <h2>Shortcodes</h2>
+                        <h2 class="dark-on-light">Shortcodes</h2>
                         <a href="#">
                         <img src="./img/short.jpg" alt="admin panel">
                         </a>
                     </div>
                     <div class="col-md-4">
-                          <h2>Videos</h2>
+                          <h2 class="dark-on-light">Videos</h2>
                           <a href="#">
                           <img src="./img/videos.jpg" alt="admin panel">
                           </a>
@@ -128,10 +149,12 @@
                   </article>
                   <article class="row">
                     <div class="col-md-12">
+                      <div class="row col-md-12">
+                        <h2><span class="first_letter">L</span>ists</h2>
+                      </div>
                       <div class="row">
-                      <div class="col-sm-12 col-md-4">
-                      <h2><span class="first_letter">L</span>ists</h2>
-                      <h4>List style type circle <code>ul</code></h4>
+                        <div class="col-sm-12 col-md-4">
+                      <h4>List style type circle <code>&lt;ul&gt;</code></h4>
                     <ul>
                       <li>Lorem ipsum dolor sit amet</li>
                       <li>Consectetur adipiscing elit</li>
@@ -148,21 +171,21 @@
                     </ul>
                     </div>
                     <div class="col-sm-12 col-md-4">
-                      <h4>Unstyled</h4>
+                      <h4>Unstyled <code>&lt;ul class="unstyled"&gt;</code></h4>
                       <p>Lorem ipsum dolor sit amet<br>
                         Consectetur adipiscing elit<br>
                         Facilisis in pretium nisl aliquet<br>
-                        Nulla volutpat aliquam velit<br>
+                        Nulla volutpat aliquam velit</p><br>
                       <ul>
                         <li>Phasellus iaculis neque</li>
                         <li>Purus sodales ultricies</li>
                         <li>Vestibulum laoreet porttitor </li>
                       </ul>
-                      Faucibus porta lacus fringilla vel<br>
+                      <p>Faucibus porta lacus fringilla vel<br>
                         Aenean sit amet erat nunc</p>
                     </div>
                     <div class="col-sm-12 col-md-4">
-                      <h4>Ordered ol</h4>
+                      <h4>Ordered <code>&lt;ol&gt;</code></h4>
                       <ol>
                         <li>Lorem ipsum dolor sit amet</li>
                         <li>Consectetur adipiscing elit</li>
@@ -175,7 +198,7 @@
                     </div>
                     </div>
                     </article>
-                    <article class="table col-md-12">
+                    <article class="col-md-12">
                       <h2><span class="first_letter">T</span>able</h2>
                         <table>
                           <tr>
@@ -242,14 +265,16 @@
               <footer class="footer">
                     <div class="container">
                       <div class="row">
-                      <div class="footerBox col-md-4" >
+                      <div class="footer-ul-clock col-md-4">
                         <h2><span class="first_letter">C</span>HERRY Hours</h2>
                         <p>We are open 24/7</p>
-                        <p>Nights! Absolutely No Extra Charge</p>
-                        <p>Weekends! Absolutely No Extra Charge</p>
-                        <p>Holidays! Absolutely No Extra Charge</p>
+                        <ul>
+                          <li>Nights! Absolutely No Extra Charge</li>
+                          <li>Weekends! Absolutely No Extra Charge</li>
+                          <li>Holidays! Absolutely No Extra Charge</li>
+                        </ul>
                       </div>
-                      <div class="footerBox col-md-4">
+                      <div class="footer-list-bullet col-md-4">
                         <h2>Local <span class="first_letter">C</span>HERRY</h2>
                         <ul>
                           <li>West Hollywood (323) 221-1107</li>
@@ -260,7 +285,7 @@
                         </ul>
                         <p>Call Us Toll Free 1-800-287-0919</p>
                       </div>
-                      <div class="footerBox col-md-4">
+                      <div class="col-md-4">
                         <h2>Our Los Angeles Location</h2>
                         <p>Steve Smith</p>
                         <p>Hi-Tech Cherry Company</p>

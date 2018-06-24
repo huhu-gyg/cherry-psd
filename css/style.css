@@ -1,31 +1,145 @@
+
+:root {
+  --font-color-one: rgb(174, 75, 93);
+  --font-color-two:  rgb(165, 173, 184);
+  --font-color-three: rgb(101, 111, 122); 
+  --font-color-four: rgb(43, 48, 54);
+  --font-color-five: rgb(255, 255, 255);
+  --font-color-six: rgb(92, 100, 110);
+  --font-color-seven: rgb(149, 22, 31);
+  --font-table-content: rgb(157, 164, 175);
+
+  --background-nav-two: rgb(243, 243, 243);
+  --background-contact-us: rgb(243, 243, 243);
+  --background-contact-us-button: rgb(156, 26, 35);
+  --border-contact-us-button: rgb(255, 255, 255);
+  --font-contact-us-button: rgb(255, 255, 255);
+
+  --font-footer: rgb(133, 137, 143);
+  --font-footer-email: rgb(174, 75, 93);
+  --font-footer-email-hover: rgb(255, 255, 255);
+  --footer-list-bullet: rgb(174, 75, 93);
+
+
+  --background-navigation-1: rgb(149, 22, 31);
+  --background-body-layout: rgb(226, 226, 231);
+  --background-main-layout: rgb(255, 255, 255);
+  --background-table-header: rgb(174, 75, 93);
+  --background-table-layout: rgb(40, 45, 51);
+  --table-border: rgb(255, 255, 255);
+
+  --code-background: rgb(222, 222, 222);
+
+  --background-layouts: rgb(50, 57, 66);
+  --background-app: rgb(228, 231, 229);
+  --background-app-2: rgb(212, 212, 212);
+  --background-app-3: rgb(192, 192, 192);
+  --background-main-content: rgb(255, 255, 255);
+
+  --background-navigation-2: rgb(243, 243, 243);
+  --color-navigation-1: rgb(255, 255, 255);
+  --color-navigation-2: rgb(149, 22, 31);
+
+  --color-common: rgb(128, 128, 128);
+
+
+  --footer-title-border-1: rgb(64, 71, 79);
+  --footer-title-border-2: rgb(25, 28, 32);
+}
+
+form {
+color: rgb(165, 173, 184);
+}
+.padding-0 {
+  padding: 0!important;
+}
+
+/*COMMON*/
+
+body {
+  background: var(--background-body-layout);
+}
+
+.main-content {
+  background: var(--background-main-layout);
+}
+
 /*HEADER*/
 
 .first_letter {
-  color: #990033;
+  color: var(--font-color-one);
+}
+
+h1, h2, h3 {
+  color: var(--font-color-two);
+}
+
+h4 {
+  color: var(--font-color-three);
+}
+
+code {
+  color: var(--font-color-three);
+  background-color: var(--code-background);
+}
+
+.dark-on-light {
+  color: var(--font-color-four);
+}
+
+#header-cherry-text {
+  color: var(--font-color-three);
+}
+
+#header-berry-text {
+  color: var(--font-color-four);
 }
 
 .header {
   background: url("../img/header_bg.jpg");
-  height: 72px;
+  background-size: cover;
+  min-height: 72px;
 }
 
-.search {
-  float: right;
+.form_search_input {
+    border: 2px solid var(--font-color-one);
+    color: var(--background-layouts);
+    background: var(--background-layouts);
 }
 
-.search_button {
-  float: right;
+.form_search_button {
+color: var(--color-navigation-1);
+background: var(--font-color-one);
+border: 1px solid var(--font-color-one);
 }
 
-#header2 {
+#header-berry {
   background: url("../img/main_bg.jpg");
   height: 240px;
+  background-size: cover;
+}
+
+.light-on-dark-text {
+  color: var(--font-color-five);
+}
+
+p, ul, ol {
+  color: var(--font-color-six);
+}
+
+a {
+  color: var(--font-color-seven);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--font-color-one);
 }
 
 #navbar {
   float: right;
   user-select:none;
-  background-color: #990033;
+  background-color: var(--background-navigation-1);
 }
 
 #navbar a{
@@ -46,7 +160,7 @@
 }
 
 #navbar_s {
-  background-color: #cccccc;
+  background-color: var(--background-nav-two);
   cursor:pointer;
 }
 
@@ -61,42 +175,133 @@
 }
 
 #navbar_s a {
-  color: #ffffff;
   text-decoration: underline;
   font-size: 1em;
   font-weight: bold;
+  color: var(--font-color-seven);
 }
 
+#navbar_s a:hover {
+  color: var(--font-color-one);
+}
 
 /*MAIN*/
 
 .contact_us_button {
-  background-color: #990033;
-  color: #ffffff;
+  background-color: var(--background-contact-us-button);
+  color: var(--font-contact-us-button);
+  border: 5px solid var(--border-contact-us-button);
+  cursor: pointer;
+  padding: 15px 0;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #collapse_contact_us {
   display: none;
-  background-color: #990033;
+  background-color: var(--background-navigation-1);
   color: #ffffff;
 }
 
+/* .box-shadow {
+  box-shadow: 10px 10px;
+} */
+
+
 form {
-  background-color: #cccccc;
+  background-color: var(--background-contact-us);
   padding: 15px;
   line-height: 0.8
 }
 
+  table tr:first-child th:first-child 
+	{
+		border-top-left-radius: 5px;
+	}
+	
+	table tr:first-child th:last-child 
+	{
+		border-top-right-radius: 5px;
+	}
+	
+	table tr:last-child td:first-child 
+	{
+		border-bottom-left-radius: 5px;
+	}
+	
+	table tr:last-child td:last-child 
+	{
+		border-bottom-right-radius: 5px;
+	}
 
-.table {
-  float: left;
+table, th, td {
+  border: 1px solid var(--table-border);
+  font-size: 1em;
+  line-height: 1;
+  padding: 10px;
+}
+
+th {
+  background-color: var(--background-table-header);
+  color: var(--font-color-five);
+  text-align: center;
+}
+
+td {
+  background-color: var(--background-table-layout);
+  color: var(--font-table-content);
+}
+
+table a {
+  color: var(--font-color-one);
+}
+
+table a:hover {
+  color: var(--font-color-five);
+  text-decoration: underline;
+}
+.aside-article {
+  padding: 10px;
 }
 
 /*FOOTER*/
 
+.footer h2, p, li {
+color: var(--font-footer);
+}
+
 .footer {
   background: url("../img/footer_bg.jpg");
-  color: #ffffff;
+  background-size: cover;
+}
+
+.footer-list-bullet ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* .footer-list-bullet li {
+  padding-left: 16px;
+} */
+
+.footer-list-bullet li:before {
+  content: "•";
+  padding-right: 8px;
+  color: var(--footer-list-bullet);
+}
+
+.footer a {
+  color: var(--font-footer-email);
+}
+
+.footer a:hover {
+  color: var(--font-footer-email-hover);
+  text-decoration: underline;
+}
+
+.footer-ul-clock ul {
+  list-style-image: url("../img/clock_icon.jpg");
 }
 
 /* .footerBox {
@@ -118,12 +323,14 @@ form {
 
   /* Media Queries */
 
-@media(max-width: 768px) {
+@media(max-width: 992px) {
   #collapse_contact_us {
     width: 100%;
     display: inline-block;
   }
 }
+
+
 
   /* #collapse_aside {
     display: inline;
@@ -154,3 +361,5 @@ form {
   }
 
 } */
+
+

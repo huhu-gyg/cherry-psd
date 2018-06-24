@@ -1,0 +1,163 @@
+:root {
+    --background-layouts: rgb(50, 57, 66);
+    --background-app: rgb(228, 231, 229);
+    --background-app-2: rgb(212, 212, 212);
+    --background-app-3: rgb(192, 192, 192);
+    --background-main-content: rgb(255, 255, 255);
+    --background-navigation-1: rgb(149, 22, 31);
+    --background-navigation-2: rgb(243, 243, 243);
+
+    --color-navigation-1: rgb(255, 255, 255);
+    --color-navigation-2: rgb(149, 22, 31);
+
+    --color-common: rgb(128, 128, 128);
+    --color-search-button: rgb(174, 75, 93);
+
+    --footer-title-border-1: rgb(64, 71, 79);
+    --footer-title-border-2: rgb(25, 28, 32);
+    
+}
+
+.header-component,
+.footer-container {
+    background-color: var(--background-layouts);
+    color: var(--color-common);
+}
+
+    .header-component_input,
+    .header-component_button {
+        border-radius: 5px!important;
+    }
+
+    .header-component_input {
+        border: 2px solid var(--color-search-button);
+        color: var(--background-layouts);
+        background: var(--background-layouts);
+    }
+
+    .header-component_button {
+        margin: 0 0 0 15px;
+        color: var(--color-navigation-1);
+        background: var(--color-search-button);
+        border: 1px solid var(--color-search-button);
+    }
+
+    .footer-container {
+        padding: 10px 0 0 0;
+        border-top: 5px solid var(--color-search-button);
+    }
+
+    .footer-container_title {
+        position:relative; 
+        border-bottom: 1px solid var(--footer-title-border-1);
+        padding: 0 0 10px 0; 
+    }
+
+    .footer-container_title:before {
+        content:""; 
+        display:block; 
+        position:absolute; 
+        left:0; 
+        bottom:0px; 
+        width:100%; 
+        height: 1px;                          
+        background: var(--footer-title-border-2);
+    }
+
+.app-component {
+    background: var(--background-app);
+}
+
+.home-component {
+    background: var(--background-main-content);
+}
+
+.jumbotron-component {
+    background:url('../images/jumbotron.png') repeat;
+    background-size: cover;
+    /* width: 980px; */
+    padding: 0;
+    margin: 0;
+    height: 240px;
+}
+
+.navigation-component_elem1 {
+    background-color: var(--background-navigation-1);
+    color: var(--color-navigation-1);
+}
+
+    .navigation-component_elem1 a {
+        margin: 10px;
+        font-weight: bold;
+        color: var(--background-main-content);
+    }
+
+    .navigation-component_elem1-position {
+        float: right;
+    }
+
+.navigation-component_elem2 {
+    background-color: var(--background-navigation-2);
+    color: var(--color-navigation-2);
+}
+
+.home_gallery-image {
+    background-color: var(--color-common);
+    width: 200px;
+    height: 150px;
+}
+
+.home-component_table {
+    border-radius: 5px;
+}
+
+.home-component_table * {
+    border: 1px solid var(--background-app)!important;
+}
+
+.home-component_table-header {
+    background: var(--color-search-button);
+    color: var(--background-main-content);
+}
+
+.home-component_table-body {
+    background: var(--background-layouts);
+    color: var(--color-common);
+}
+
+@media only screen and (max-width: 992px) {
+    .aside-component {
+        display: none;
+    }
+}
+
+.aside-component_contact {
+    border: 2px solid var(--color-common);
+    background: var(--background-app);
+}
+
+.aside-component_contact_input {
+    position: relative;
+    margin: 10px 0;
+    background: var(--background-app-2);
+    border: 2px solid var(--background-app-3);
+    color: var(--color-common);
+    border-radius: 5px;
+}
+.aside-component_contact_dropdown {
+    width: 100%; 
+    text-align: left;
+}
+    .aside-component_contact_dropdown.dropdown-toggle::after {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+
+.aside-component_contact_button {
+    background: var(--background-navigation-1);
+    border: 5px solid var(--background-main-content);
+    color: var(--background-main-content);
+    width: 100%;
+    margin: 10px 0 25px 0;
+}
