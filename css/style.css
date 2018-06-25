@@ -7,7 +7,14 @@
   --font-color-five: rgb(255, 255, 255);
   --font-color-six: rgb(92, 100, 110);
   --font-color-seven: rgb(149, 22, 31);
+
+  --font-color-navbar: rgb(255, 255, 255);
+  --font-color-navbar-hover: rgb(165, 173, 184);
+  --font-color-navbar-sm: rgb(165, 173, 184);
+  --font-color-navbar-sm-hover: rgb(43, 48, 54);
+
   --font-table-content: rgb(157, 164, 175);
+  --font-navbar-button: rgb(255, 255, 255);
 
   --background-nav-two: rgb(243, 243, 243);
   --background-contact-us: rgb(243, 243, 243);
@@ -22,6 +29,8 @@
 
 
   --background-navigation-1: rgb(149, 22, 31);
+  --background-navigation-2: rgb(255, 255, 255);;
+
   --background-body-layout: rgb(226, 226, 231);
   --background-main-layout: rgb(255, 255, 255);
   --background-table-header: rgb(174, 75, 93);
@@ -95,8 +104,8 @@ code {
 .header {
   background: url("../img/header_bg.jpg");
   background-size: cover;
-  max-height: 72px;
-  line-height: 0.5;
+  /* max-height: 72px; */
+  line-height: 1;
 }
 
 .form_search_input {
@@ -137,27 +146,27 @@ a:hover {
   color: var(--font-color-one);
 }
 
-#navbar {
-  float: right;
+.main-navbar {
   user-select:none;
   background-color: var(--background-navigation-1);
 }
 
-#navbar a{
-  color: #ffffff;
+.main-navbar a {
+  color: var(--font-color-navbar);
   text-decoration: none;
   font-size: 1em;
   font-weight: bold;
-}
-
-#navbar ul{
   cursor:pointer;
-  float: right;
 }
 
-#navbar li{
-  display: inline;
-  padding: 0 20px 0 20px;
+.main-navbar a:hover {
+  color: var(--font-color-navbar-hover);
+}
+
+.navbar-button {
+  width: 100%;
+  background-color: var(--background-navigation-1);
+  color: var(--font-navbar-button);
 }
 
 #navbar_s {
@@ -326,13 +335,13 @@ hr {
     display: inline-block;
   }
 
-  .header {
+  /* .header {
     max-height: auto;
-  }
+  } */
 
 }
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
   #collapse_contact_us {
     width: 100%;
     display: inline-block;
@@ -341,10 +350,25 @@ hr {
   .form_search_input {
     max-width: 100%;
   }
-  
-  .header {
-    max-height: auto;
+
+  .main-navbar {
+    user-select:none;
+    background-color: var(--background-navigation-2);
   }
+
+  .main-navbar a {
+    color: var(--font-color-navbar-sm);
+  }
+  
+  .main-navbar a:hover {
+    color: var(--font-color-navbar-sm-hover);
+  }
+
+
+  
+  /* .header {
+    max-height: auto;
+  } */
 
 }
 
