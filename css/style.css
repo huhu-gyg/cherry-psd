@@ -318,7 +318,7 @@ box-shadow: none!important;
 
 #header-berry {
   background: url("../img/main_bg.jpg");
-  height: 240px;
+  height: auto;
   background-size: cover;
   padding-top: 45px!important;
   padding-left: 60px!important;
@@ -604,9 +604,13 @@ hr {
     margin-right: 20px;
   }
 
-  /* .header {
-    max-height: auto;
-  } */
+  .header {
+    max-height: none;
+  }
+
+  #header-berry {
+    height: auto;
+  }
 
 }
 
@@ -620,9 +624,18 @@ hr {
     max-width: 100%;
   }
 
+  .header {
+    max-height: none;
+  }
+
+  #header-berry {
+    height: auto;
+  }
+
   .main-navbar {
     user-select:none;
     background-color: var(--background-navigation-2);
+    height: auto;
   }
 
   .main-navbar a {
